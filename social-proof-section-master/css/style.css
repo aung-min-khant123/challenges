@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+  flex-basis: 900px;
+}
+.container .intro-container .intro {
+  max-width: 80%;
+}
+.container .intro-container .intro h1 {
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.container .intro-container .intro p {
+  color: hsl(300, 43%, 22%);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.container .rating-container {
+  max-width: 70%;
+}
+.container .rating-container .rating {
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.25rem 0;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 4px;
+}
+.container .rating-container .rating:nth-child(2) {
+  transform: translateX(2rem);
+}
+.container .rating-container .rating:nth-child(3) {
+  transform: translateX(4rem);
+}
+.container .rating-container .rating .img-container img {
+  width: 10px;
+}
+.container .rating-container .rating h5 {
+  font-size: 0.8rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.container .card-container {
+  grid-column: 1/3;
+  max-width: 27%;
+  display: grid;
+  grid-template-areas: "one" "two" "three";
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .container .card-container {
+    grid-template-areas: "one two three";
+  }
+}
+.container .card-container .card {
+  padding: 0.8rem 1.5rem;
+  gap: 2rem;
+  margin: 1.25rem 0;
+  color: white;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 4px;
+}
+.container .card-container .card:nth-child(1) {
+  grid-area: one;
+  width: 270px;
+  height: 170px;
+}
+.container .card-container .card:nth-child(2) {
+  grid-area: two;
+  width: 270px;
+  height: 170px;
+  transform: translateY(1rem);
+}
+.container .card-container .card:nth-child(3) {
+  grid-area: three;
+  width: 270px;
+  height: 170px;
+  transform: translateY(2rem);
+}
+.container .card-container .card .cardsmall {
+  display: flex;
+  flex-direction: row;
+  margin: 1.3rem 0.5rem;
+  box-sizing: border-box;
+}
+.container .card-container .card .cardsmall img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.container .card-container .card .cardsmall h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+.container .card-container .card .cardsmall .buyer {
+  font-size: 0.8rem;
+  color: hsl(333, 80%, 67%);
+}
+.container .card-container .card p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */
