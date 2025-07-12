@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-color: grey;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 0px 4px;
+}
+.card h1 {
+  padding: 1rem;
+  background-color: var(--theme-color);
+  color: #fff;
+}
+.card .btn-container {
+  margin: 1.2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.card .btn-container button {
+  background-color: var(--theme-color);
+  color: #fff;
+  border: 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+}
+.card .theme-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem 0 1.2rem;
+}
+.card .theme-btn-container .btn {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+.card .theme-btn-container .btn1 {
+  background-color: rgb(79, 150, 150);
+}
+.card .theme-btn-container .btn2 {
+  background-color: rgb(129, 124, 50);
+}
+.card .theme-btn-container .btn3 {
+  background-color: rgb(12, 218, 81);
+}
+.card .theme-btn-container .btn4 {
+  background-color: rgb(150, 79, 91);
+}
+
+.btn:hover {
+  transform: scale(2, 2);
+}/*# sourceMappingURL=style.css.map */
