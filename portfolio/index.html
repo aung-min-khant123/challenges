@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close"><i class="fa fa-times"></i></span>
+        <div class="content-title">
+          <span>Skills</span>
+        </div>
+        <div class="skills-box">
+          <span class="skills-label">HTML</span>
+          <span class="skills-label">CSS</span>
+          <span class="skills-label">Javascript</span>
+          <span class="skills-label">React js</span>
+        </div>
+      </div>
+    </div>
+     <div class="modal" id="myModal1">
+      <div class="modal-content">
+        <span class="close"><i class="fa fa-times"></i></span>
+        <div class="content-title">
+          <span>Services We offer</span>
+        </div>
+        <div class="desc-content">
+          <p>I work together with my team to offer best services in:</p>
+          <ul class="services-list">
+            <li>Web Development</li>
+            <li>Web Design</li>
+            <li>Web Hosting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal2">
+      <div class="modal-content">
+        <span class="close"><i class="fa fa-times"></i></span>
+        <div class="content-title">
+          <span>About me</span>
+        </div>
+        <p>
+          I am a junior web developer who passionate about web development,
+          software development.I am still learing about web development and
+          software development.
+        </p>
+      </div>
+    </div>  
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <div class="nav">
+        <div class="nav_logo">
+          <span>Aung Min Khant</span>
+        </div>
+        <div class="nav_right">
+          <div class="nav_menu" id="navMenu">
+            <ul class="link_list">
+              <div class="close-menu">
+                <i class="fa fa-times" onclick="menuClose()"></i>
+              </div>
+              <li class="list">
+                <a href="#" class="link">Home</a>
+              </li>
+              <li class="list">
+                <a href="#myModal" class="link" id="myBtn"
+                  >Skills <i class="fa fa-caret-down"></i
+                ></a>
+                <div class="description-box">
+                  <div class="link_description" id="myDescription">
+                    <div class="content-title">
+                      <span>I'm skilled in</span>
+                    </div>
+                    <div class="desc-content">
+                      <span class="skills-label">HTML</span>
+                      <span class="skills-label">CSS</span>
+                      <span class="skills-label">Javascript</span>
+                      <span class="skills-label">React js</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <a href="#myModal1" class="link" id="myBtn"
+                  >Services <i class="fa fa-caret-down"></i
+                ></a>
+                <div class="description-box">
+                  <div class="link_description" id="myDescription">
+                    <div class="content-title">
+                      <span>Services we offer</span>
+                    </div>
+                    <div class="desc-content">
+                      <p>
+                        I work together with my team to offer best services in:
+                      </p>
+                      <ul class="services-list">
+                        <li>Web Development</li>
+                        <li>Web Design</li>
+                        <li>Web Hosting</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list">
+                <a href="#myModal2" class="link" id="myBtn"
+                  >About <i class="fa fa-caret-down"></i
+                ></a>
+                <div class="description-box about_box">
+                  <div class="link_description" id="myDescription">
+                    <div class="content-title">
+                      <span>About me</span>
+                    </div>
+                    <div class="desc-content">
+                      <p>
+                        I am a junior web developer who passionate about web
+                        development, software development.I am still learing
+                        about web development and software development.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_button">
+            <a href="#" class="btn"
+              ><span>Download</span> <i class="fa fa-download"></i
+              ><span>CV</span></a
+            >
+          </div>
+          <div class="mode">
+            <div class="moon-sun" id="toggle-switch">
+              <i class="fa fa-moon" id="moon"></i>
+              <i class="fa fa-sun" id="sun"></i>
+            </div>
+          </div>
+          <div class="nav_menu_btn">
+            <i class="fa fa-bars" onclick="myMenuFunction()"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Js/script.js"></script>
+  </body>
+</html>
