@@ -252,16 +252,16 @@ body.dark{
                     img{
                         position: absolute;
                         right: 0;
-                        bottom: 0;
+                        bottom: 0;;
                         border-radius: 50%;
-                        width: 450px;
+                        width: 200px;
                         animation: circleZoom 5s infinite;
-                    }
-                    @keyframes circleZoom {
-                        50%{
-                            width: 550px;
+                        
+                        @media(min-width:1084px){
+                            width: 400px;
                         }
                     }
+
                 }
             }
         }
