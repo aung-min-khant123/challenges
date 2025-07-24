@@ -1,3 +1,10 @@
+const body = document.querySelector("body"),
+      toggleSwitch = document.getElementById("toggle-switch");
+
+toggleSwitch.addEventListener('click', () =>{
+      body.classList.toggle("dark");
+})
+
 function myMenuFunction(){
     var navMenu = document.getElementById('navMenu');
 
@@ -66,3 +73,12 @@ function menuClose(){
  handleMediaQueryChange(mediaQuery)
 
  mediaQuery.addListener(handleMediaQueryChange)
+
+ const navLink = document.querySelectorAll(".link");
+
+ function linkAction(){
+      const navMenu = document.getElementById("navMenu");
+
+      navMenu.classList.remove("responsive");
+ }
+ navLink.forEach(n => n.addEventListener('click', linkAction ));
