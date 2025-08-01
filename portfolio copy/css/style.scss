@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: white;
+  width: 100%;
+}
+.hero-section {
+  min-height: 90vh;
+  max-width: 100vw;
+  background-image: url(https://img.freepik.com/free-vector/black-geometric-memphis-social-banner_53876-116843.jpg);
+
+  .photo {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 7px solid rgba(0, 0, 0, 0.37);
+      box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.3);
+    }
+    .intro {
+      color: white;
+      h1 {
+        color: rgb(17, 17, 17);
+      }
+      h3 {
+        span {
+          font-size: 2.5rem;
+          background-color: #ffffff;
+          border: 3px solid rgba(255, 0, 0, 0.473);
+          border-radius: 10px;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.about-section {
+  max-width: 100vw;
+  min-height: 70vh;
+  background-color: rgb(58, 56, 56);
+  .about {
+    max-width: 70%;
+    border-radius: 10px;
+    h2 {
+      border-radius: 10px;
+      color: cadetblue;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+  .edu {
+    max-width: 70%;
+    border-radius: 10px;
+  }
+}
+.skills-section {
+  background-color: rgb(0, 0, 0);
+  h2 {
+  }
+  .skill {
+    max-width: 100vw;
+    .logo {
+      max-width: 70%;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .box {
+        width: 100px;
+        height: 10px;
+        background-color: rgb(102, 94, 94);
+        border-radius: 10px;
+        text-align: center;
+        .bar {
+          width: 85px;
+          height: 10px;
+          background-color: #f04242;
+          border-radius: 10px;
+        }
+        .bar1 {
+          width: 70px;
+          height: 10px;
+          background-color: blue;
+          border-radius: 10px;
+        }
+        .bar2 {
+          width: 50px;
+          height: 10px;
+          background-color: yellow;
+          border-radius: 10px;
+        }
+        .bar3 {
+          width: 11px;
+          height: 10px;
+          background-color: skyblue;
+          border-radius: 10px;
+        }
+        .bar4 {
+          width: 60px;
+          height: 10px;
+          background-color: rgb(58, 14, 58);
+          border-radius: 10px;
+        }
+        .bar5 {
+          width: 55px;
+          height: 10px;
+          background-color: white;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+.project-section {
+  min-height: 100vh;
+  max-width: 100vw;
+  .projects {
+    .project{
+      width: 350px;
+      height: 300px;
+      background-color: rgb(22, 20, 20);
+      border-radius: 10px;
+      @media(max-width:578px){
+        width: 200px;
+        height: 170px;
+
+      }
+      img{
+        width: 250px;
+        height: 180px;
+        border-radius: 8px;
+        @media(max-width:578px){
+          width: 100px;
+          height: 80px;
+        }
+      }
+      a{
+        border-radius: 4px;
+        color: black;
+        background-color: darkgray;
+        outline: 2px solid black;
+      }
+      p{
+        color: black;
+        font-weight: 700;
+        @media(min-width:768px){
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+.contact-section{
+  background-color: black;
+  min-height: 100vh;
+  .contact-info{
+    min-height: 60vh;
+    .contact{
+      input[type="text"]{
+        width: 250px;
+        padding: 10px;
+        border: 2px solid gray;
+        background-color: black;
+        border-radius: 10px;
+        color: #fff;
+      }
+      input[type="email"]{
+        width: 250px;
+        padding: 10px;
+        color: #fff;
+        border: 2px solid gray;
+        border-radius: 10px;
+        background-color: black;
+      }
+     input[type="message"]{
+      padding-bottom:10rem;
+      border: 2px solid gray;
+      border-radius: 10px;
+      background-color: black;
+      color: #fff;
+     }
+    }
+    .description{
+
+     img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+     }
+    }
+  }
+}
