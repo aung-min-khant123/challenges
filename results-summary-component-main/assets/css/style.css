@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "hank";
+  src: url("../fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "hank", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 470px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+  }
+}
+.container .result {
+  flex-basis: 50%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 1.6rem 2rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+@media (min-width: 768px) {
+  .container .result {
+    border-radius: 30px;
+  }
+}
+.container .result h5 {
+  color: hsl(241, 100%, 89%);
+}
+.container .result .circle {
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 100px;
+  height: 100px;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .result .circle h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+.container .result .circle p {
+  font-size: 0.8rem;
+  color: hsl(241, 100%, 89%);
+  opacity: 0.6;
+}
+.container .result .great {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.8rem;
+}
+.container .result .detail {
+  color: hsl(241, 100%, 89%);
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+.container .summary {
+  flex-basis: 50%;
+  padding: 1.5rem;
+}
+.container .summary h5 {
+  font-size: 1rem;
+}
+.container .summary .card-container {
+  margin: 1.4rem 0;
+}
+.container .summary .card-container .card {
+  background-color: hsl(0, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 9px;
+  margin-bottom: 0.5rem;
+}
+.container .summary .card-container .card .reaction {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container .summary .card-container .card .reaction img {
+  width: 15px;
+}
+.container .summary .card-container .card .reaction h6 {
+  font-size: 0.6rem;
+  color: hsl(0, 100%, 67%);
+}
+.container .summary .card-container .card .rate h5 {
+  color: hsl(224, 30%, 27%);
+}
+.container .summary .card-container .card .rate h5 span {
+  opacity: 0.6;
+}
+.container .summary .card-container .memory {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container .summary .card-container .memory img {
+  width: 15px;
+}
+.container .summary .card-container .memory h6 {
+  font-size: 0.6rem;
+  color: hsl(39, 100%, 56%);
+}
+.container .summary .card-container .verbal {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container .summary .card-container .verbal img {
+  width: 15px;
+}
+.container .summary .card-container .verbal h6 {
+  font-size: 0.6rem;
+  color: hsl(166, 100%, 37%);
+}
+.container .summary .card-container .visual {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container .summary .card-container .visual img {
+  width: 15px;
+}
+.container .summary .card-container .visual h6 {
+  font-size: 0.6rem;
+  color: hsl(234, 85%, 45%);
+}
+.container .summary .card-container .memo-container {
+  background-color: hsl(39, 100%, 96%);
+}
+.container .summary .card-container .verbal-container {
+  background-color: hsl(166, 100%, 97%);
+}
+.container .summary .card-container .visual-container {
+  background-color: hsl(234, 85%, 98%);
+}
+.container .summary .card-container button {
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+.container .summary .card-container button:hover {
+  background-color: hsl(241, 81%, 54%);
+}/*# sourceMappingURL=style.css.map */

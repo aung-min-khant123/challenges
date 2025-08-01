@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 13px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  background-color: pink;
+  max-width: 630px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+}
+.container .card {
+  padding: 1.5rem;
+}
+.container .card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(1) button:active {
+  background-color: hsl(31, 77%, 52%);
+}
+.container .card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.container .card:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
+}
+.container .card:nth-child(2) button:active {
+  background-color: hsl(184, 100%, 22%);
+}
+.container .card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+.container .card:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+.container .card:nth-child(3) button:active {
+  background-color: hsl(179, 100%, 13%);
+}
+.container .card .detail img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .card .detail h2 {
+  color: hsl(0, 0%, 95%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0.8rem 0 1.2rem;
+}
+.container .card .detail p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  font-size: 15px;
+}
+@media (min-width: 768) {
+  .container .card .detail p {
+    font-size: 12px;
+  }
+}
+.container .card button {
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 3rem;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 40px;
+  padding: 0.8rem 1.2rem;
+  font-size: 12px;
+}
+.container .card button:hover {
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+}/*# sourceMappingURL=style.css.map */
